@@ -27,6 +27,6 @@ Mac / Linux:
   * scheduling is done by using:
      * crontab -e
      - [ https://crontab.guru/ ] 
-     *SAMPLE:
+     * SAMPLE:
       *  0 9 * * * python3 [path/to/www/directory/]inventory/telegram/scheduler.py
 
