@@ -10,9 +10,7 @@
 3) set a password and username in handler/auth.php
 4) setup an account user name and password by filling in the auth table in the inventory
 
-##Notes:
-
- ###Telegram:
+## Telegram
 1) create a telegram bot and add it to telegram/config.cfg*
 2) command: 
      *python3 telegram/server.py *
