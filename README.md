@@ -17,3 +17,16 @@
 3) message your bot and see your user id
 4) go into telegram/scheduler.py and add your user_id the same way as the send_jabez() function
 5) test the function to see if the message is sent to self.
+
+### 6) scheduling
+Windows:
+   Follow tutorial:
+  [ https://datatofish.com/python-script-windows-scheduler/ ]
+     
+Mac / Linux:
+  * scheduling is done by using:
+     * crontab -e
+     - [ https://crontab.guru/ ] 
+     SAMPLE:
+       0 9 * * * python3 [path/to/www/directory/]inventory/telegram/scheduler.py
+
