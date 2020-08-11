@@ -21,12 +21,12 @@
 ### 6) scheduling
 Windows:
    Follow tutorial:
-  [ https://datatofish.com/python-script-windows-scheduler/ ]
+  *[ https://datatofish.com/python-script-windows-scheduler/ ]
      
 Mac / Linux:
   * scheduling is done by using:
      * crontab -e
      - [ https://crontab.guru/ ] 
-     SAMPLE:
-       0 9 * * * python3 [path/to/www/directory/]inventory/telegram/scheduler.py
+     *SAMPLE:
+      *  0 9 * * * python3 [path/to/www/directory/]inventory/telegram/scheduler.py
 
