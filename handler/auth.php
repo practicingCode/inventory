@@ -1,7 +1,7 @@
 <?php 
-    $servername = "localhost";
-    $username = "phpmyadmin";
-    $password = "P@ssword1";
+    $servername = "";
+    $username = "";
+    $password = "password";
     $dbname = "inventory";
 
 ?>
