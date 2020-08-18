@@ -552,8 +552,37 @@ if($_POST){
 //===================================================================================
 //INPUT
 //-----
-    $sql = "INSERT INTO entries (room_id, store_id, point_id, item, images, supporting_docs, alert_warranty, alert_est_consumption, quantity)
-    VALUES ($room_id, '$store_id', '$point_id', '$item', '$images', '$pdf', DATE'$awd', DATE'$aed', $qty)";
+
+    
+    $q = "room_id, store_id, point_id, item, images";
+    $v = "$room_id, '$store_id', '$point_id', '$item', '$images'";
+    
+        if ($pdf == ""){}
+        else {
+            $q += ", supporting_docs";
+            $v += ", '$pdf'";
+        }
+        
+        if ($awd == ""){}
+        else {
+            $q += ", alert_warranty" ;
+            $v += ", DATE'$awd'";
+        }
+
+        if ($aed == ""){}
+        else {
+            $q += ", alert_est_consumption";
+            $v += ", DATE'$aed'";
+        }
+
+        if ($qty == ""){}
+        else {
+            $q += ", quantity" ;
+            $v += ", $qty";
+        }
+        
+    $sql = "INSERT INTO entries ($q)
+    VALUES ($v)";
 
     if ($conn->query($sql) === TRUE) {
         echo "<p style='color:green';>New record created successfully</p>";
